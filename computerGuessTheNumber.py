@@ -27,3 +27,5 @@ while status != 'c':
         computer_guess = random.randint(computer_guess,maxi)        
         print(Fore.CYAN + 'my guess is:', computer_guess, Fore.RESET)
         status = input(Fore.YELLOW + 'how is your number? ' + Fore.RESET)
+
+print(Fore.MAGENTA + 'your number was', computer_guess, 'and i found it with',try_count, 'try(s)!', Fore.RESET)
