@@ -12,3 +12,18 @@ maxi = 1000
 mini = -1000
 computer_guess = random.randint(-1000,1000) #computer first guess can be 0 to find the number faster
 status = input(f'{Fore.CYAN}My first guess is {computer_guess}.{Fore.RESET}{Fore.YELLOW}\nhow is your number (type "c" if my guess was right)? {Fore.RESET}')
+
+while status != 'c':
+    if status == 's': 
+        try_count += 1
+        maxi = computer_guess
+        computer_guess = random.randint(mini,computer_guess)        
+        print(Fore.CYAN + 'my guess is: ', computer_guess, Fore.RESET)
+        status = input(Fore.YELLOW + 'how is your number? ' + Fore.RESET)
+    
+    if status == 'b':
+        try_count += 1
+        mini = computer_guess
+        computer_guess = random.randint(computer_guess,maxi)        
+        print(Fore.CYAN + 'my guess is:', computer_guess, Fore.RESET)
+        status = input(Fore.YELLOW + 'how is your number? ' + Fore.RESET)
