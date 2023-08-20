@@ -1,4 +1,4 @@
-import random # to generate random numbers
+import random # to generate random numbers for the guesses
 import secrets
 from colorama import Fore,Back,Style
 from colorama import init
