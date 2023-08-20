@@ -1,4 +1,4 @@
-import random
+import random # to generate random numbers
 import secrets
 from colorama import Fore,Back,Style
 from colorama import init
